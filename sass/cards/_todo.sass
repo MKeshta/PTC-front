@@ -1,0 +1,40 @@
+.todo-list
+    .todo-item
+        display: inline-flex
+        align-items: center
+        .todo-text-wrapper
+            display: inline-flex
+            align-items: center
+        .date-bage
+            padding: 0.25rem 1rem 0.25rem 1rem
+            border-radius: 20px
+            color: white
+            background-color: $mainBrown
+            white-space: nowrap
+            font-size: 15px
+            margin-right: 0.5rem
+        .todo-text
+            font-size: 13px
+            color: $lightGray
+            margin-right: 0.5rem
+
+@media (max-width: 1180px)
+    .todo-list
+        .todo-item
+            align-items: flex-start
+            .todo-text-wrapper
+                flex-direction: column
+                align-items: flex-start
+                margin-right: 0.5rem
+                margin-top: -7px
+                .todo-text
+                    margin-top: 0.25rem
+                    margin-right: 1rem
+@media  (max-width: 1346px)
+    .todo-list
+        .todo-item
+            .date-bage
+                padding: 0.25rem 0.5rem 0.25rem 0.5rem    
+                font-size: 13px
+            .todo-text
+                font-size: 11px

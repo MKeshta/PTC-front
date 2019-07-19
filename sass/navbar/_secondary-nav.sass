@@ -1,0 +1,159 @@
+#secondary-nav
+    color: $lightGray
+    white-space: nowrap
+    padding-top: 0.5rem
+    padding-bottom: 0.5rem
+    .nav-brand
+        .nav-logo-wrapper
+            display: inline-block
+            padding-right: 1rem
+            margin-right: 1rem
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                height: 80%
+                width: 1px
+                background-color: $lightGray
+                right: 0
+                top: 50%
+                transform: translate(0%,-50%)
+            .nav-brand-lg-link
+                display: block
+                width: 200px
+                img
+                    width: 100%
+            .nav-brand-md-link
+                display: none
+                width: 60px
+                img
+                    width: 100%
+    .secondary-nav-main
+        direction: rtl
+        margin-right: 2rem 
+        display: inline-flex
+        align-items: center
+        .emp-info
+            display: inline-flex
+            .emp-avatar-wrapper
+                width: 50px
+                img 
+                    width: 100%
+            .emp-info-text
+                .emp-name
+                    font-size: 15px
+                .emp-title
+                    font-size: 13px
+        .icons-wrapper
+            .nav-item
+                margin-right: 1rem
+                .nav-link
+                    display: block
+                    width: 22px
+                    padding: 0
+                    img
+                        width: 100%
+                        opacity: 0.8
+                        &:hover
+                            opacity: 1
+
+@media (max-width: 991px)
+    #secondary-nav
+        .nav-brand
+            .nav-logo-wrapper
+                .nav-brand-lg-link
+                    display: none
+                .nav-brand-md-link
+                    display: block
+@media (max-width: 650px)
+    #secondary-nav
+        .secondary-nav-main
+            .emp-info
+                .emp-avatar-wrapper
+                    width: 40px
+                .emp-info-text
+                    .emp-name
+                        font-size: 13px
+                    .emp-title
+                        font-size: 11px
+            .icons-wrapper
+                .nav
+                    padding-right: 1rem
+                    .nav-item
+                        .nav-link
+                            width: 19px
+
+@media (max-width: 530px)
+    #secondary-nav
+        .nav-brand
+            .nav-logo-wrapper
+                margin: 0 0.2rem 0 1rem
+                padding: 0
+                &::after
+                    display: none
+                .nav-brand-md-link
+                    width: 50px
+            span
+                display: none
+        .secondary-nav-main
+            margin-right: 1rem
+            .emp-info
+                .emp-avatar-wrapper
+                    width: 40px
+                .emp-info-text
+                    .emp-name
+                        font-size: 13px
+                    .emp-title
+                        font-size: 11px
+            .icons-wrapper
+                .nav
+                    padding-right: 1rem
+                    .nav-item
+                        .nav-link
+                            width: 19px
+@media (max-width: 470px)
+    #secondary-nav
+        .nav-brand
+            .nav-logo-wrapper
+                .nav-brand-md-link
+                    width: 45px
+            span
+                display: none
+        .secondary-nav-main
+            .emp-info
+                .emp-avatar-wrapper
+                    width: 30px
+                .emp-info-text
+                    .emp-name
+                        font-size: 12px
+                    .emp-title
+                        font-size: 10px
+            .icons-wrapper
+                .nav
+                    padding-right: 1rem
+                    .nav-item
+                        .nav-link
+                            width: 15px
+@media (max-width: 376px)
+    #secondary-nav
+        .nav-brand
+            .nav-logo-wrapper
+                .nav-brand-md-link
+                    width: 45px
+            span
+                display: none
+        .secondary-nav-main
+            .emp-info
+                .emp-avatar-wrapper
+                    width: 30px
+                .emp-info-text
+                    .emp-name
+                        font-size: 12px
+                    .emp-title
+                        font-size: 10px
+            .icons-wrapper
+                .nav
+                    padding-right: .1rem
+                    .nav-item
+                        .nav-link
+                            width: 15px

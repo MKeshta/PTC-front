@@ -1,0 +1,43 @@
+#events-wrapper
+    .events-list
+        list-style: none
+        padding: 0
+        .events-list-item
+            margin-bottom: 1rem
+            .event
+                display: inline-flex
+                .event-date-box
+                    width: 79px
+                    height: 77px
+                    border: 1px solid $mainBrown
+                    background-color: white
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-around
+                    .event-date
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-around
+                        &.single-date
+                            .date
+                                font-weight: bold
+                                div
+                                    text-align: center
+                        &.multi-date
+                            height: 100%
+                            font-size: 13px
+                            .date
+                                text-align: center
+                                font-weight: bold
+                                div
+                                    text-align: center 
+                                    display: inline-block
+                .event-text
+                    padding-right: 0.7rem
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    .name
+                        font-weight: bold
+                    .description
+                        font-size: 13px

@@ -1,0 +1,26 @@
+#primary-nav
+    background-color: $mainBrown 
+    direction: rtl
+    z-index: 1000
+    #navbarToggler
+        .navbar-nav
+            .nav-item
+                margin-left: 1rem
+                .nav-link
+                    color: white
+                    &:hover
+                        color: darken(white,15%)
+        .search-input-wrapper
+            position: relative
+            .search-icon
+                position: absolute
+                top: 50%
+                right: 10px
+                transform: translate(0%,-50%)
+                width: 18px
+                img 
+                    width: 100%
+            #nav-search
+                padding-right: 25px !important 
+                font-size: 15px
+                border: 1px solid $lightGray
